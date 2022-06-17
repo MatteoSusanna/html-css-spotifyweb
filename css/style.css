@@ -63,6 +63,10 @@ img{
     width: 100%;
 }
 
+.color-white{
+    color: var(--primary-text);
+}
+
 
 /*Fine regole renerali*/
 
@@ -91,7 +95,22 @@ img{
     height: 70px;
     background-color: var(--secondary-color);
 }
+
+.side-top .logo-mobile{
+    display: none;
+}
+
+.btn-principali{
+    width: 13%;
+    color: var(--secondary-text);
+}
+
+.btn-principali span{
+    position: absolute;
+}
+
  /*sidebar*/
+
 .container-main .side-bar{
     color: var(--primary-text);
     line-height: 1.8rem;
@@ -127,7 +146,9 @@ img{
     padding: 0 1rem;
 }
 
-.recenti .card, .creato .card, .artisti .card{
+.recenti .card, 
+.creato .card, 
+.artisti .card{
     width: calc( ( 100% / 6 ) - 2rem );
     margin-right: 2rem;
 }
@@ -204,7 +225,9 @@ footer i{
 
 /*Primo Break*/
 @media screen and (max-width: 1000px){
-    .recenti .card, .creato .card, .artisti .card{
+    .recenti .card, 
+    .creato .card, 
+    .artisti .card{
         width: calc( ( 100% / 4 ) - 2rem );
         margin-right: 2rem;
     }
@@ -222,7 +245,9 @@ footer i{
 /*Secondo Break*/
 
 @media screen and (max-width: 768px){
-    .recenti .card, .creato .card, .artisti .card{
+    .recenti .card, 
+    .creato .card, 
+    .artisti .card{
         width: calc( ( 100% / 2 ) - 2rem );
         margin-right: 2rem;
     }
@@ -237,12 +262,34 @@ footer i{
 
 /*Terzo Break*/
 @media screen and (max-width: 576px){
-    .side-bar{
+    .side-bar .logo, 
+    .side-bar .btn-principali, 
+    .side-bar .playlist, 
+    .side-bot{
         display: none;
+    }
+
+    .btn-principali span{
+        display: none;
+    }
+
+    .btn-principali img{
+        display: block;
+    }
+
+    .side-top .logo-mobile{
+        display: block;
+        width: 100%;
+    }
+
+
+    .side-bar{
+        width: 15%;
     }
 
     .main-content{
         background-color: var(--primary-color);
-        width: 100%;
+        width: 85%;
     }
+
 }
