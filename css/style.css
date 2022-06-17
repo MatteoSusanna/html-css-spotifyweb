@@ -263,7 +263,6 @@ footer i{
 /*Terzo Break*/
 @media screen and (max-width: 576px){
     .side-bar .logo, 
-    .side-bar .btn-principali, 
     .side-bar .playlist, 
     .side-bot{
         display: none;
@@ -274,12 +273,12 @@ footer i{
     }
 
     .btn-principali img{
-        display: block;
+        width: 30px
     }
 
     .side-top .logo-mobile{
         display: block;
-        width: 100%;
+        width: 30px;
     }
 
 
