@@ -124,12 +124,12 @@ img{
     width: 70%;
 }
 
-.container-main .side-bar a{
-    color: var(--secondary-text);
-}
-
 .container-main .side-bar i{
     margin-right: 0.5rem;
+}
+
+.container-main .side-bar li{
+    color: var(--secondary-text);
 }
 
 .side-bot .profilo{
