@@ -18,6 +18,14 @@ body{
     font-family: sans-serif;
 }
 
+.btn{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
+    border:1px solid var(--primary-text);
+    border-radius: 17px;
+    padding: 0.5rem 2rem;
+}
 /*Inizio regole renerali*/
 a{
     text-decoration: none;
@@ -59,6 +67,10 @@ li{
     margin: 2rem 0;
 }
 
+.mbot{
+    margin-bottom: 1rem;
+}
+
 .padding-text{
     padding: 0 1rem;
 }
@@ -98,6 +110,8 @@ img{
 .main-topbar{
     height: 70px;
     background-color: var(--secondary-color);
+    text-align: right;
+    padding: 1rem;
 }
 
 .side-top .logo-mobile{
@@ -134,12 +148,12 @@ img{
 
 
 .side-bot .profilo{
-    position: sticky;
+    position: fixed;
+    margin-bottom: 100px;
+    height: 100px;
+    width: 200px;
+    background-color: var(--bar-color);
     bottom: 0;
-}
-
-.playlist{
-    overflow-y: auto;
 }
 
 
@@ -175,38 +189,6 @@ img{
 section .text{
     text-align: center;
 }
-
-/*inizio gestione hover img*/
-.img{
-    position: relative;
-}
-
-.layover{
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: none;
-}
-
-.blayover{
-    border-radius: 50%;
-}
-
-.layover i{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate( -50% , -50% );
-    font-size: 50px;
-}
-
-.img:hover .layover{
-    display: block;
-}
-/*fine gestione hover img*/
 
 /*Fine Main*/
 
@@ -251,16 +233,27 @@ footer .right{
 .center .down{
     background-color: var(--secondary-text);
     width: 100%;
-    height: 3px;
+    height: 4px;
     border-radius: 10px;
     position: relative;
 }
 
 .center .down .in-down{
     background-color: var(--primary-text);
-    height: 3px;
+    height: 4px;
     position: absolute;
     width: 40%;
+}
+
+.down .in-down .cerchio{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    background-color: var(--primary-text);
+    border-radius: 50%;
+    bottom: -5.9px;
+    left: 100%;
+    display: none;
 }
 
 
@@ -269,6 +262,57 @@ footer .right{
 
 
 
+
+/*gestione Hover*/
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.scritte-top span:hover{
+    color: var(--primary-text);
+}
+
+.center .down:hover .in-down{
+    background-color: green;
+}
+
+.center .down:hover .cerchio{
+    display: block;
+}
+
+
+
+/*inizio gestione hover img*/
+.img{
+    position: relative;
+}
+
+.layover{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+}
+
+.blayover{
+    border-radius: 50%;
+}
+
+.layover i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate( -50% , -50% );
+    font-size: 50px;
+}
+
+.img:hover .layover{
+    display: block;
+}
+/*fine gestione hover img*/
 
 
 
