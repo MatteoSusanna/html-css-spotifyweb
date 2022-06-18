@@ -132,6 +132,15 @@ img{
     margin-right: 0.5rem;
 }
 
+.side-bot .profilo{
+    position: sticky;
+    bottom: 0;
+}
+
+.playlist{
+    overflow-y: auto;
+}
+
 
 /*content*/
 .main-content .scritte-top{
@@ -148,6 +157,7 @@ img{
 
 .main-content .scritte-top span{
     padding: 0 1rem;
+    font-weight:bold; 
 }
 
 .recenti .card, 
@@ -207,6 +217,7 @@ footer{
     height: 100px;
     background-color: var(--footer-color);
     position: sticky;
+    bottom: 0;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -223,18 +234,20 @@ footer i{
     padding: 1rem;
 }
 
+footer .left i{
+    padding: 0.5rem;
+}
+
 footer .right i{
     font-size: 13px;
     padding: 2px;
 }
 
-footer .left,
-footer .center,
 footer .right{
-   max-width: 700px;
-}
+    text-align: right;
+} 
 
-.down{
+.center .down{
     background-color: var(--secondary-text);
     width: 100%;
     height: 3px;
@@ -242,7 +255,7 @@ footer .right{
     position: relative;
 }
 
-.in-down{
+.center .down .in-down{
     background-color: var(--primary-text);
     height: 3px;
     position: absolute;
