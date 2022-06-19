@@ -25,6 +25,7 @@ body{
     border:1px solid var(--primary-text);
     border-radius: 17px;
     padding: 0.5rem 2rem;
+    margin-right: 20px;
 }
 /*Inizio regole renerali*/
 img{
@@ -112,12 +113,13 @@ li{
     width: calc( 100% - 250px );
     background-color: var(--secondary-color);
     text-align: right;
-    opacity: 0.5;
+    opacity: 0.7;
     padding: 1rem;
     position: fixed;
+    z-index: 99;
     top: 0;
     right: 0;
-    z-index: 9999;
+
 }
 
 .side-top .logo-mobile{
@@ -172,7 +174,7 @@ li{
 .container-section{
     color: var(--primary-text);
     padding: 2rem;
-    height: calc( 100vh - 170px);
+    height: calc( 100vh - 100px);
     overflow-y: auto;
     flex-wrap: wrap;
 }
@@ -214,6 +216,7 @@ footer{
     height: 100px;
     background-color: var(--footer-color);
     position: sticky;
+    z-index: 999;
     bottom: 0;
     padding: 0 0.5rem;
     display: flex;
@@ -361,7 +364,7 @@ footer .right{
 /*Media*/
 
 /*Primo Break*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 992px){
     .recenti .card, 
     .creato .card, 
     .artisti .card{
@@ -426,6 +429,11 @@ footer .right{
     .main-content{
         background-color: var(--primary-color);
         width: 85%;
+    }
+
+    .main-topbar{
+        height: 70px;
+        width: calc( 100% - 15% );
     }
 
 }
