@@ -104,13 +104,20 @@ li{
 .main-content{
     background-color: var(--primary-color);
     width: calc( 100% - 250px );
+    height: calc( 100vh - 100px );
 }
 
 .main-topbar{
     height: 70px;
+    width: calc( 100% - 250px );
     background-color: var(--secondary-color);
     text-align: right;
+    opacity: 0.5;
     padding: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 .side-top .logo-mobile{
@@ -159,6 +166,7 @@ li{
 /*content*/
 .main-content .scritte-top{
     color: var(--secondary-text);
+    margin-top: 70px;
 }
 
 .container-section{
@@ -266,7 +274,9 @@ footer .right{
     display: none;
 }
 
-
+.center .top i{
+    font-size: 20px;
+}
 /*Fine footer*/
 
 
@@ -278,16 +288,18 @@ footer .right{
     transform: scale(1.1);
 }
 
-.scritte-top span:hover{
-    color: var(--primary-text);
-}
-
 .center .down:hover .in-down{
     background-color: green;
 }
 
 .center .down:hover .cerchio{
     display: block;
+}
+
+.playlist li:hover,
+.btn-principali span:hover,
+.scritte-top span:hover {
+    color: var(--primary-text);
 }
 
 
