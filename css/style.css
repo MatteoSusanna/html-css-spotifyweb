@@ -27,6 +27,10 @@ body{
     padding: 0.5rem 2rem;
 }
 /*Inizio regole renerali*/
+img{
+    width: 100%;
+}
+
 a{
     text-decoration: none;
 }
@@ -59,10 +63,6 @@ li{
     flex-direction: column;
 }
 
-.text-white{
-    color: var(--primary-text);
-}
-
 .mtop-bot{
     margin: 2rem 0;
 }
@@ -75,14 +75,13 @@ li{
     padding: 0 1rem;
 }
 
-img{
-    width: 100%;
-}
-
 .color-white{
     color: var(--primary-text);
 }
 
+.color-sec{
+    color: var(--secondary-text);
+}
 
 /*Fine regole renerali*/
 
@@ -173,6 +172,7 @@ img{
 .main-content .scritte-top span{
     padding: 0 1rem;
     font-weight:bold; 
+    font-size: 0.8rem;
 }
 
 .recenti .card, 
@@ -180,6 +180,12 @@ img{
 .artisti .card{
     width: calc( ( 100% / 6 ) - 2rem );
     margin-right: 2rem;
+}
+
+.recenti span,
+.creato  span,
+.artisti span{
+    color: var(--secondary-text);
 }
 
 .artisti img{
@@ -201,7 +207,7 @@ footer{
     background-color: var(--footer-color);
     position: sticky;
     bottom: 0;
-    padding: 1rem;
+    padding: 0 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -215,6 +221,10 @@ footer i{
     color: white;
     font-size: 20px;
     padding: 1rem;
+}
+
+footer .left .text{
+    font-size: 0.8rem;
 }
 
 footer .left i{
