@@ -123,8 +123,9 @@ li{
     color: var(--secondary-text);
 }
 
-.btn-principali span{
-    position: absolute;
+.btn-principali div{
+    display: flex;
+    
 }
 
  /*sidebar*/
@@ -252,9 +253,13 @@ footer .right{
     text-align: right;
 } 
 
+.center {
+    width: 400px;
+}
+
 .center .down{
     background-color: var(--secondary-text);
-    width: 100%;
+    width: 90%;
     height: 4px;
     border-radius: 10px;
     position: relative;
@@ -281,6 +286,17 @@ footer .right{
 .center .top i{
     font-size: 20px;
 }
+
+.num{
+    color: white;
+    font-size: 13px;
+    align-items: center;
+}
+
+.num > span {
+    margin: 0 10px;
+}
+
 /*Fine footer*/
 
 
