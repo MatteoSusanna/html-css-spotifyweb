@@ -133,8 +133,8 @@ li{
     color: var(--secondary-text);
 }
 
-.btn-principali span{
-    position: absolute;
+.btn-principali div{
+    display: flex; 
 }
 
  /*sidebar*/
@@ -207,6 +207,14 @@ li{
 section .text{
     text-align: center;
 }
+
+.img-profilo{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+ }
 /*Fine Main*/
 
 
@@ -252,9 +260,13 @@ footer .right{
     text-align: right;
 } 
 
+.center {
+    width: 400px;
+}
+
 .center .down{
     background-color: var(--secondary-text);
-    width: 100%;
+    width: 90%;
     height: 4px;
     border-radius: 10px;
     position: relative;
@@ -265,6 +277,20 @@ footer .right{
     height: 4px;
     position: absolute;
     width: 40%;
+    animation: ed 3s linear 3;
+}
+
+@keyframes ed{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 50%;
+    }
+    100%{
+        width: 100%;
+    }
+    
 }
 
 .down .in-down .cerchio{
@@ -281,6 +307,16 @@ footer .right{
 .center .top i{
     font-size: 20px;
 }
+
+.num{
+    color: white;
+    font-size: 13px;
+    align-items: center;
+}
+
+.num > span {
+    margin: 0 10px;
+}
 /*Fine footer*/
 
 
@@ -288,6 +324,17 @@ footer .right{
 
 
 /*gestione Hover*/
+.center .top .play:hover{
+    transform: scale(1.9);
+}
+
+.center .top .casual:hover,
+.center .top .back:hover,
+.center .top .after:hover,
+.center .top .reload:hover{
+    transform: scale(1.5);
+}
+
 .btn:hover{
     transform: scale(1.1);
 }
@@ -413,8 +460,13 @@ footer .right{
 /*Terzo Break*/
 @media screen and (max-width: 576px){
     .side-bar .logo, 
-    .side-bar .playlist, 
-    .side-bot{
+    .side-bar .playlist{
+        display: none;
+    }
+
+    .side-bot span,
+    hr,
+    .download{
         display: none;
     }
 
@@ -423,7 +475,11 @@ footer .right{
     }
 
     .btn-principali img{
-        width: 30px
+        width: 30px;
+    }
+
+    .btn-principali > div{
+        display: block;
     }
 
     .side-top .logo-mobile{
@@ -431,9 +487,14 @@ footer .right{
         width: 30px;
     }
 
+    .side-bot .profilo{
+        width: 50px;
+    }
+
+
 
     .side-bar{
-        width: 15%;
+        width: 70px;
     }
 
     .main-content{
@@ -443,7 +504,7 @@ footer .right{
 
     .main-topbar{
         height: 70px;
-        width: calc( 100% - 15% );
+        width: calc( 100% - 70px );
     }
 
     footer .right{

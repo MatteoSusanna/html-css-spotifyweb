@@ -114,19 +114,6 @@ li{
 
 }
 
-.side-top .logo-mobile{
-    display: none;
-}
-
-.btn-principali{
-    width: 13%;
-    color: var(--secondary-text);
-}
-
-.btn-principali div{
-    display: flex;
-    
-}
 
  /*sidebar*/
  .side-bar{
@@ -150,22 +137,43 @@ li{
     width: 100%;
 }
 
+.side-top .logo-mobile{
+    display: none;
+}
+
+.side-top .logo{
+    width: 70%;
+}
+
+.btn-principali{
+    width: 13%;
+    color: var(--secondary-text);
+}
+
+.btn-principali div{
+    display: flex; 
+}
+
 .side-bot .profilo{
     height: 100%;
     background-color: var(--bar-color);
 }
 
-.container-main .side-bar .logo{
-    width: 70%;
-}
-
-.container-main .side-bar i{
+.side-bar i{
     margin-right: 0.5rem;
 }
 
-.container-main .side-bar li{
+.side-bar li{
     color: var(--secondary-text);
 }
+
+.img-profilo{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    overflow: hidden;
+ }
 
 
 /*content*/
@@ -420,8 +428,13 @@ footer .right{
 /*Terzo Break*/
 @media screen and (max-width: 576px){
     .side-bar .logo, 
-    .side-bar .playlist, 
-    .side-bot{
+    .side-bar .playlist{
+        display: none;
+    }
+
+    .side-bot span,
+    hr,
+    .download{
         display: none;
     }
 
@@ -430,13 +443,18 @@ footer .right{
     }
 
     .btn-principali img{
-        width: 30px
+        width: 30px;
+    }
+
+    .btn-principali > div{
+        display: block;
     }
 
     .side-top .logo-mobile{
         display: block;
         width: 30px;
     }
+
 
 
     .side-bar{
