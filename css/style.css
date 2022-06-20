@@ -139,12 +139,14 @@ li{
     line-height: 1.8rem;
 }
 
-.side-bot{
-    height: 100px;
-}
-
 .side-top{
     height: calc(100% - 100px);
+    width: 100%;
+}
+
+.side-bot{
+    height: 100px;
+    width: 100%;
 }
 
 .side-bot .profilo{
@@ -422,7 +424,7 @@ footer .right{
 
 
     .side-bar{
-        width: 15%;
+        width: 70px;
     }
 
     .main-content{
@@ -432,7 +434,7 @@ footer .right{
 
     .main-topbar{
         height: 70px;
-        width: calc( 100% - 15% );
+        width: calc( 100% - 70px );
     }
 
     footer .right{
@@ -440,4 +442,10 @@ footer .right{
         flex-direction: column;
     }
 
+}
+
+
+
+@media screen and (max-height: 500px){
+    
 }
