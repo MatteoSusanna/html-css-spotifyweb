@@ -377,6 +377,10 @@ footer .right{
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
+    .card-none1{
+        display: none;
+    }
     
 }
 
@@ -397,6 +401,11 @@ footer .right{
         flex-wrap: wrap;
         justify-content: flex-start;
     }
+
+    .card-none2{
+        display: none;
+    }
+    
 }
 
 
@@ -442,4 +451,18 @@ footer .right{
         flex-direction: column;
     }
 
+}
+
+
+
+
+/*media in altezza*/
+@media screen and (max-height: 445px){
+    .main-topbar{
+        display: none;
+    }
+
+    .main-content .scritte-top {
+        margin-top: 10px;
+    }
 }
