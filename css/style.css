@@ -130,6 +130,9 @@ li{
 .side-top{
     height: calc(100% - 100px);
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .side-bot{
@@ -148,6 +151,10 @@ li{
 .btn-principali{
     width: 13%;
     color: var(--secondary-text);
+}
+
+.playlist ul{
+    overflow-y: auto;
 }
 
 .btn-principali div{
@@ -173,6 +180,12 @@ li{
     background-color: gray;
     border-radius: 50%;
     overflow: hidden;
+ }
+
+ .playlist{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
  }
 
 
