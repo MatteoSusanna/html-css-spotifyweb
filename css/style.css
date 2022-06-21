@@ -476,7 +476,7 @@ footer .right{
 
     .main-content{
         background-color: var(--primary-color);
-        width: 85%;
+        width: calc(100% - 70px);
     }
 
     .main-topbar{
