@@ -406,8 +406,12 @@ footer .right{
     .recenti .card, 
     .creato .card, 
     .artisti .card{
-        width: calc( ( 100% / 4 ) - 2rem );
-        margin-right: 2rem;
+        width: calc( ( 100% / 4 ) - 1rem );
+        margin-right: 1rem;
+    }
+
+    .container-section{
+        padding: 1rem;
     }
 
     .recenti .card-container{
@@ -426,8 +430,8 @@ footer .right{
     .recenti .card, 
     .creato .card, 
     .artisti .card{
-        width: calc( ( 100% / 2 ) - 2rem );
-        margin-right: 2rem;
+        width: calc( ( 100% / 2 ) - 1rem );
+        margin-right: 1rem;
     }
 
     .recenti .card-container{
@@ -466,6 +470,10 @@ footer .right{
     .side-top .logo-mobile{
         display: block;
         width: 30px;
+    }
+
+    .left .text{
+        display: none;
     }
 
 
