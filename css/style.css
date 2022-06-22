@@ -477,7 +477,6 @@ footer .right{
     }
 
 
-
     .side-bar{
         width: 70px;
     }
@@ -495,6 +494,10 @@ footer .right{
     footer .right{
         display: flex;
         flex-direction: column;
+    }
+
+    footer{
+        padding: 0;
     }
 
 }
